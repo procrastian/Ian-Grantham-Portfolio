@@ -1,18 +1,15 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
 <a name="readme-top"></a>
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `portfolio`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/procrastian/portfolio">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://images.pexels.com/photos/65128/pexels-photo-65128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Logo" width="80" height="80">
   </a>
-<h3 align="center">project_title</h3>
+<h3 align="center">My Software Dev Portfolio</h3>
   <p align="center">
-    A personal portfolio page showcasing several coding projects that I have worked on.
+    A personal portfolio page showcasing several coding projects that I have worked on, built with a focus on React and MaterialUI.
     <br />
     <a href="https://github.com/procrastian/portfolio"><strong>Explore the docs »</strong></a>
     <br />
