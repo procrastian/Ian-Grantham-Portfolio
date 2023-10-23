@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ProjectCard from "../Card/Card";
 import BoxSx from "../Box/Box";
+import ProjectGrid from "../Grid/Grid";
 
 export default function BasicAccordian() {
   return (
@@ -55,11 +56,23 @@ export default function BasicAccordian() {
           <BoxSx />
         </AccordionDetails>
       </Accordion>
-      <Accordion disabled>
+      <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4a-content"
           id="panel4a-header"
+        >
+          <Typography>Accordion 4 - Grid</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <ProjectGrid />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion disabled>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel5a-content"
+          id="panel5a-header"
         >
           <Typography>Disabled Accordion</Typography>
         </AccordionSummary>
