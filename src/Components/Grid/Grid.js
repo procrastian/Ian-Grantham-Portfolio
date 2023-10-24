@@ -1,7 +1,6 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
 
@@ -14,17 +13,13 @@ const Img = styled("img")({
 
 export default function ProjectGrid() {
   return (
-    <Paper
-      sx={{
-        p: 2,
-        margin: "auto",
-        maxWidth: 500,
-        flexGrow: 1,
-        backgroundColor: (theme) =>
-          theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-      }}
-    >
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Grid item>
           <ButtonBase sx={{ width: 128, height: 128 }}>
             <Img
@@ -36,9 +31,6 @@ export default function ProjectGrid() {
         <Grid item xs={12} sm container>
           <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
-              <Typography gutterBottom variant="subtitle1" component="div">
-                Project Name
-              </Typography>
               <Typography variant="body2" gutterBottom>
                 Project Description
               </Typography>
@@ -52,25 +44,26 @@ export default function ProjectGrid() {
                 variant="body2"
               ></Typography>
             </Grid>
-            <Grid item>
+          </Grid>
+          <Grid container spacing={2}>
+            <Grid item xs={4}>
               <a
                 href="https://github.com/procrastian/react-media-prompts"
                 target="blank"
               >
-                GitHub LINK
+                GitHub
               </a>
             </Grid>
-            <Grid item>
+            <Grid item xs={6}>
               <a
                 href="https://procrastian.github.io/react-media-prompts/"
                 target="blank"
               >
-                View Live LINK
+                View Site
               </a>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
-    </Paper>
   );
 }
