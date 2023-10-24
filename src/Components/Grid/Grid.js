@@ -4,7 +4,6 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Img = styled("img")({
   margin: "auto",
@@ -38,13 +37,13 @@ export default function ProjectGrid() {
           <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
               <Typography gutterBottom variant="subtitle1" component="div">
-                Standard license
+                Project Name
               </Typography>
               <Typography variant="body2" gutterBottom>
-                Full resolution 1920x1080 • JPEG
+                Project Description
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                ID: 1030114
+                Tech Stack
               </Typography>
             </Grid>
             <Grid item>
@@ -58,14 +57,17 @@ export default function ProjectGrid() {
                 href="https://github.com/procrastian/react-media-prompts"
                 target="blank"
               >
-                <GitHubIcon></GitHubIcon>
+                GitHub LINK
               </a>
             </Grid>
-          </Grid>
-          <Grid item>
-            <Typography variant="subtitle1" component="div">
-              $19.00
-            </Typography>
+            <Grid item>
+              <a
+                href="https://procrastian.github.io/react-media-prompts/"
+                target="blank"
+              >
+                View Live LINK
+              </a>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
