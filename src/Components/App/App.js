@@ -13,11 +13,13 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <ButtonAppBar></ButtonAppBar>
-        <Container maxWidth="sm">
-          <BasicAccordion />
-        </Container>
+      <div className="pattern">
+        <div className="App">
+          <ButtonAppBar></ButtonAppBar>
+          <Container maxWidth="sm">
+            <BasicAccordion />
+          </Container>
+        </div>
       </div>
     </ThemeProvider>
   );
