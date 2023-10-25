@@ -13,8 +13,8 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="pattern">
-        <div className="App">
+      <div className="App">
+        <div className="pattern">
           <ButtonAppBar></ButtonAppBar>
           <Container maxWidth="sm">
             <BasicAccordion />

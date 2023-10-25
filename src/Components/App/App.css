@@ -1,11 +1,11 @@
 .App {
   min-height: 100vh;
-  clip-path: url(#mask);
 }
 
 .pattern {
-  /* background-color: #dfdbe5; */
-  
+  min-height: 100vh;
+  background-color: purple;
+  background-image:url("../../../assets/circuit-board.svg");
 }
 
 :root {
