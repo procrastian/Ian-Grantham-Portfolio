@@ -27,28 +27,6 @@ body {
 }
 
 .pattern {
-  /* background-color: black;  */
   min-height: 100vh;
   min-width: 100vw;
-}
-
-#tiles {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: repeat(var(--rows), 1fr);
-}
-
-.tile {
-  position: relative;
-}
-
-.tile:before {
-  background-color: rgb(20, 20, 20);
-  content: "";
-  position: absolute;
-  inset: 0.5px;
 }
