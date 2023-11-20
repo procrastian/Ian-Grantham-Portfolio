@@ -17,7 +17,6 @@
 }
 
 body {
-  z-index: 1;
   animation: background-pan 10s linear infinite;
   background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
   background-size: 200%;
@@ -29,4 +28,12 @@ body {
 .pattern {
   min-height: 100vh;
   min-width: 100vw;
+}
+
+.content {
+  height: 100%;
+  top: 0;
+  left: 20%;
+  justify-content: center;
+  align-items: center;
 }
