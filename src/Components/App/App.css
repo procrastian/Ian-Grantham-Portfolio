@@ -1,16 +1,10 @@
-.App {
-  min-height: 100vh;
-}
-
-.pattern {
-  min-height: 100vh;
-  background-color: purple;
-  background-image:url("../../../assets/circuit-board.svg");
-}
-
 :root {
   --g1: rgb(0, 234, 222);
   --g2: rgb(236, 64, 164);
+}
+
+.App {
+  min-height: 100vh;
 }
 
 @keyframes background-pan {
@@ -30,7 +24,12 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0px;
-  
+}
+
+.pattern {
+  /* background-color: black;  */
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 #tiles {
