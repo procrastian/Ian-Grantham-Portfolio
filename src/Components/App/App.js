@@ -4,7 +4,6 @@ import "./App.css";
 // import ButtonAppBar from "../AppBar/AppBar.js";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Background from "../Background/Background.js";
-import { Box } from "@mui/material";
 
 const theme = createTheme({
   palette: {
