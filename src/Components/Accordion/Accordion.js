@@ -14,7 +14,7 @@ export default function BasicAccordian() {
           aria-controls="panel-content"
           id="panel-header"
         >
-          <Typography>Project Title</Typography>
+          <Typography>View My Projects</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <ProjectGrid />

@@ -1,7 +1,6 @@
 import Container from "@mui/material/Container";
 import BasicAccordion from "../Accordion/Accordion.js";
 import "./App.css";
-// import ButtonAppBar from "../AppBar/AppBar.js";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Background from "../Background/Background.js";
 
@@ -22,7 +21,6 @@ function App() {
         <Background zIndex sx={{zIndex: "pattern", position: 'absolute'}}>
 
         </Background>
-        {/* <ButtonAppBar></ButtonAppBar> */}
         <Container
           maxWidth="sm"
           className="content"
