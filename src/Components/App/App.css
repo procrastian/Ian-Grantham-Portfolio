@@ -1,11 +1,15 @@
 :root {
   --g1: rgb(0, 234, 222);
   --g2: rgb(236, 64, 164);
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   min-height: 100vh;
 }
+
+/*** colour gradient effect ***/
 
 @keyframes background-pan {
   from {
@@ -16,7 +20,6 @@
   }
 }
 
-/* colour gradient effect */
 body {
   animation: background-pan 10s linear infinite;
   background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
@@ -26,15 +29,31 @@ body {
   margin: 0px;
 }
 
+/*** Masking effect ***/
+
 .pattern {
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 500px;
+  width: 500px;
+  border: 10px solid coral;
+  background-color: black;
+  mask: url(#myMask);
+  mask-size: 100%;
+  mask-repeat: repeat round;
+  mask-size: 500px;
 }
 
-.content {
-  height: 75%;
-  top: 0;
-  left: 20%;
-  justify-content: center;
-  align-items: center;
+.el {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  mask-image: url("../../../assets/Seamless-Circuit-Board-Pattern.svg");
+  mask-size: 500%;
+  mask-repeat: repeat;
+  mask-position: center;
 }
