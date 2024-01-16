@@ -27,33 +27,15 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0px;
+  
 }
 
 /*** Masking effect ***/
 
-.pattern {
-  height: 500px;
-  width: 500px;
-  border: 10px solid coral;
-  background-color: black;
-  mask: url(#myMask);
-  mask-size: 100%;
-  mask-repeat: repeat round;
-  mask-size: 500px;
-}
-
-.el {
-  width: 100vw;
+.blackoutLayer {
+  background-image: url("../../../assets/Raw-Seamless-Circuit-Board-Pattern.png");
+  object-fit: fit;
   height: 100vh;
-  padding: 1rem;
-
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  mask-image: url("../../../assets/Seamless-Circuit-Board-Pattern.svg");
-  mask-size: 500%;
-  mask-repeat: repeat;
-  mask-position: center;
+  width: 100vw;
 }
+
