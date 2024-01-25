@@ -30,8 +30,6 @@ body {
   
 }
 
-/*** Masking effect ***/
-
 .blackoutLayer {
   background-image: url("../../../assets/Raw-Seamless-Circuit-Board-Pattern.png");
   object-fit: fit;
@@ -39,3 +37,13 @@ body {
   width: 100vw;
 }
 
+/*** tabs styles ***/
+
+.allTabs {
+  border: 5px solid red;
+  background-color: slategrey;
+  position: absolute;
+  height: 60%;
+  left: 10%;
+  top: 20%;
+}
