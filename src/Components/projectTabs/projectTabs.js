@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import MyCV from '../CV/CV';
+import ContactInfo from '../Contact/Contact';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -70,7 +71,7 @@ export default function BasicTabs() {
         <MyCV />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={4}>
-        Contact details
+        <ContactInfo/>
       </CustomTabPanel>
     </Box>
   );
