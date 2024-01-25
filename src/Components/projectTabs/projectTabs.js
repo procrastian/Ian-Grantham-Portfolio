@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { MyPDF } from '../PDFDisplay/PDFDisplay';
+import MyCV from '../CV/CV';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,7 +53,8 @@ export default function BasicTabs() {
           <Tab label="Project One" {...a11yProps(0)} />
           <Tab label="Project Two" {...a11yProps(1)} />
           <Tab label="Project Three" {...a11yProps(2)} />
-          <Tab label="CV" {...a11yProps(3)} />
+          <Tab label="About Me" {...a11yProps(3)} />
+          <Tab label="Contact" {...a11yProps(4)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -66,7 +67,10 @@ export default function BasicTabs() {
         Project Three
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        <MyPDF/>
+        <MyCV />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={4}>
+        Contact details
       </CustomTabPanel>
     </Box>
   );
