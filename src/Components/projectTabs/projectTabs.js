@@ -1,11 +1,12 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import MyCV from '../CV/CV';
-import ContactInfo from '../Contact/Contact';
+import * as React from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import MyCV from "../CV/CV";
+import ContactInfo from "../Contact/Contact";
+import ResponsiveGrid from "../Project/Project";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -36,7 +37,7 @@ CustomTabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
   };
 }
 
@@ -48,9 +49,13 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box className="allTabs" sx={{ width: '80%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+    <Box className="allTabs" sx={{ width: "80%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+        >
           <Tab label="Project One" {...a11yProps(0)} />
           <Tab label="Project Two" {...a11yProps(1)} />
           <Tab label="Project Three" {...a11yProps(2)} />
@@ -59,19 +64,19 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        Project One
+        <ResponsiveGrid />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Project Two
+        <ResponsiveGrid />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Project Three
+        <ResponsiveGrid />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
         <MyCV />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={4}>
-        <ContactInfo/>
+        <ContactInfo />
       </CustomTabPanel>
     </Box>
   );

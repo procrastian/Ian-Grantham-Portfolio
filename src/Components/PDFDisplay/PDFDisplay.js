@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Document, Page } from 'react-pdf';
+import { Document } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -9,7 +9,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 export function MyPDF() {
   const [numPages, setNumPages] = useState();
-  const [pageNumber, setPageNumber] = useState(1);
+  // const [pageNumber, setPageNumber] = useState(1);
 
   function onDocumentLoadSuccess() {
     setNumPages(numPages);
@@ -18,11 +18,11 @@ export function MyPDF() {
   return (
     <div>
       <Document file="LivePortfolioCV.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} />
+        {/* <Page pageNumber={pageNumber} /> */}
       </Document>
-      <p>
+      {/* <p>
         Page {pageNumber} of {numPages}
-      </p>
+      </p> */}
     </div>
   );
 }

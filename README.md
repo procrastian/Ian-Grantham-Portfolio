@@ -192,10 +192,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [x] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
+- [X] Background animation
+- [X] Mask image for pattern
+- [X] Tabs for info
+- [ ] Project Template
+- [ ] Populate Projects
+  - [ ] Add Skeletons ("https://mui.com/material-ui/react-skeleton/")
 
 See the [open issues](https://github.com/procrastian/portfolio/issues) for a full list of proposed features (and known issues).
 
