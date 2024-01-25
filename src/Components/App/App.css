@@ -43,7 +43,8 @@ body {
   border: 5px solid red;
   background-color: slategrey;
   position: absolute;
-  height: 60%;
+  height: 80%;
   left: 10%;
-  top: 20%;
+  top: 10%;
+  max-width: fit-content;
 }
